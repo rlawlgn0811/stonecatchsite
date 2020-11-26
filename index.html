@@ -2,6 +2,7 @@
 <html>
 
 <head>
+	<meta name="ROBOTS" content="index,follow"/>
 	<meta name="naver-site-verification" content="36a4760e1d75c472dee0346ae292e9f42268db47" 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,23 +20,21 @@
     <meta property="og:url" content="https://animalface.site" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="돌잡이 테스트" />
-    <meta property="og:description" content="얼굴로 찾아보는 인공지능 돌잡이 테스트, 나의 미래 직업을 찾아보세요! 사진은 외부로 노출되지 않습니다! " />
-    <meta property="og:image" content="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2Fc0eq42%2FbtqCQpiFhFn%2F8KPaOP9q8PXpJFRL7if55K%2Fimg.jpg" />
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <meta property="og:description" content="얼굴로 찾아보는 인공지능 돌잡이 테스트, 나의 미래 직업을 찾아보세요! 사진은 외부로 노출되지 않습니다! " /><link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <!--<link rel="icon" href="/favicon.ico" type="image/x-icon">-->
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e64b3727e862b06"></script>
 </head>
 
 <body>
     <nav class="p-3 container navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="https://stonecatch.rlawlgn0811.repl.co/">돌잡이 테스트</a>
+        <a class="navbar-brand" href="http://stonecatch.tk/">돌잡이 테스트</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="https://stonecatch.rlawlgn0811.repl.co/">돌잡이 테스트
+                    <a class="nav-link" href="http://stonecatch.tk/">돌잡이 테스트
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
@@ -55,7 +54,7 @@
             <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
             <div class="drag-text">
                 <img src="upload.png" class="mt-5 pt-5 upload">
-                <h3 class="mb-5 pb-5 pt-4  upload-text">사진을 그래그해서 올리거나 터치해서 업로드하세요!</h3>
+                <h3 class="mb-5 pb-5 pt-4  upload-text">사진을 드래그해서 올리거나 터치해서 업로드하세요!</h3>
             </div>
         </div>
         <div class="file-upload-content">
@@ -142,27 +141,27 @@
                 switch (prediction[0].className) {
                     case "연예인":
                         resultTitle = "연예인"
-                        resultExplain = "잘생김"
+                        resultExplain = "당신은 최상의 얼굴과 인싸력을 가지신 분이군요!"
                         resultCeleb = "연예인: 이동욱, 공유, 박보검"
                         break;
                     case "운동선수":
                         resultTitle = "운동선수"
-                        resultExplain = "멋있다"
+                        resultExplain = "당신은 얼굴이 각지고 멋있는 분위기를 가지신 분이군요!"
                         resultCeleb = "운동선수: 손흥민, 박지성, 류현진"
                         break;
                     case "재벌부자":
                         resultTitle = "재벌부자"
-                        resultExplain = "돈많게 생겼다"
+                        resultExplain = "당신은 나중에 CEO를 할 얼굴을 가지신 분이군요!"
                         resultCeleb = "재벌부자: 이재용, 정의선, 신동빈"
                         break;
                     case "판사":
                         resultTitle = "판사"
-                        resultExplain = "통찰력있는 사람"
+                        resultExplain = "당신은 통찰력있고 리더쉽있는 분이군요!"
                         resultCeleb = "판사: 김명수, 박상옥, 천종호"
                         break;
                     case "학자":
                         resultTitle = "학자"
-                        resultExplain = "공부 잘하게 생김"
+                        resultExplain = "당신은 두뇌가 명석하고 꼼꼼한 분이군요!"
                         resultCeleb = "학자: 데니스 홍, 설민석 현택환"
                         break;
                     default:
