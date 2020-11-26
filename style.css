@@ -165,27 +165,6 @@ body {
 }
 
 
-.youtube-link {
-    font-size: 1.5rem;
-    line-height: 1.71;
-    text-align: center;
-    color: #f73737;
-    text-decoration: underline;
-}
-
-.youtube-link:hover {
-    font-size: 1.5rem;
-    line-height: 1.71;
-    text-align: center;
-    color: #f73737;
-    text-decoration: underline;
-}
-
-.youtube-icon {
-    width: 30px;
-    height: 27.262px;
-}
-
 .upload {
     width: 20%;
 }
@@ -291,41 +270,7 @@ body {
   height: 2rem;
   border-radius: 10px;
   background-color: rgba(195, 140, 102, 1);
-}/*
-.fox-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  width: 100%;
-  background-color: rgba(49, 132, 155, 0.2);
 }
-.fox-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  background-color: rgba(49, 132, 155, 1);
-}
-.rabbit-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  width: 100%;
-  background-color: rgba(235, 166, 190, 0.2);
-}
-.rabbit-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  background-color: rgba(235, 166, 190, 1);
- }*/
 .percent-text {
   font-size: 1rem;
   color: #ffffff;
@@ -381,25 +326,6 @@ body {
 .학자-job-celeb {
     color: #e56995;
     font-size: 1.2rem;
-}/*
-.bear-animal-title {
-    color: #9b6b43;
-}
-.bear-animal-celeb {
-    color: #9b6b43;
-    font-size: 1.2rem;
-}
-.fox-animal-title {
-    color: #31849b;
-}
-.fox-animal-celeb {
-    color: #31849b;
-    font-size: 1.2rem;
-} */
-
-/* gender */
-input#gender {
-  display: none;
 }
 
 label {
