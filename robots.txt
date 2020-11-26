@@ -1,2 +1,2 @@
 User-agent: *Allow:/
-sitemap: https://stonecatch.tk/sitemap.xml
+Sitemap: https://stonecatch.tk/sitemap.xml
