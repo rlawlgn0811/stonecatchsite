@@ -275,7 +275,7 @@ body {
   font-size: 1rem;
   color: #ffffff;
 } 
-.animal-label {
+.job-label {
     width: 20%;
     text-align: left;
     height: 2rem;
@@ -326,6 +326,11 @@ body {
 .학자-job-celeb {
     color: #e56995;
     font-size: 1.2rem;
+}
+
+/* gender */
+input#gender {
+  display: none;
 }
 
 label {
