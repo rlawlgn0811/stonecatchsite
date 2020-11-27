@@ -143,9 +143,16 @@
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
     <script type="text/javascript">
-    const URL = "./my_model/";
+		let URL;
+		const urlMale = "./my_model/";
+        const urlFemale = "./my_model/";
         let model, webcam, labelContainer, maxPredictions;
         async function init() {
+			if (document.getElementById("gender").checked) {
+                URL = urlMale;
+            } else {
+                URL = urlFemale;
+            }
             const modelURL = URL + "model.json";
             const metadataURL = URL + "metadata.json";
             model = await tmImage.load(modelURL, metadataURL);
@@ -163,7 +170,11 @@
             prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
             console.log(prediction[0].className);
             var resultTitle, resultExplain, resultCeleb;
-                switch (prediction[0].className) {
+			
+            if (document.getElementById("gender").checked) 
+			{
+                switch (prediction[0].className) 
+				{
                     case "연예인":
                         resultTitle = "연예인"
                         resultExplain = "당신은 최상의 얼굴과 인싸력을 가지신 분이군요!"
@@ -194,6 +205,39 @@
                         resultExplain = ""
                         resultCeleb = ""
                 }
+			}
+			else{
+				                    case "연예인":
+                        resultTitle = "연예인"
+                        resultExplain = "당신은 최상의 얼굴과 인싸력을 가지신 분이군요!"
+                        resultCeleb = "연예인: 이동욱, 공유, 박보검"
+                        break;
+                    case "운동선수":
+                        resultTitle = "운동선수"
+                        resultExplain = "당신은 얼굴이 각지고 멋있는 분위기를 가지신 분이군요!"
+                        resultCeleb = "운동선수: 손흥민, 박지성, 류현진"
+                        break;
+                    case "재벌부자":
+                        resultTitle = "재벌부자"
+                        resultExplain = "당신은 나중에 CEO를 할 얼굴을 가지신 분이군요!"
+                        resultCeleb = "재벌부자: 이재용, 정의선, 신동빈"
+                        break;
+                    case "판사":
+                        resultTitle = "판사"
+                        resultExplain = "당신은 통찰력있고 리더쉽있는 분이군요!"
+                        resultCeleb = "판사: 김명수, 박상옥, 천종호"
+                        break;
+                    case "학자":
+                        resultTitle = "학자"
+                        resultExplain = "당신은 두뇌가 명석하고 꼼꼼한 분이군요!"
+                        resultCeleb = "학자: 데니스 홍, 설민석 현택환"
+                        break;
+                    default:
+                        resultTitle = "알수없음"
+                        resultExplain = ""
+                        resultCeleb = ""
+                }
+			}
                 var title = "<div class='" + prediction[0].className + "-job-title'>" + resultTitle + "</div>"
                 var explain = "<div class='job-explain pt-2'>" + resultExplain + "</div>"
                 var celeb = "<div class='" + prediction[0].className + "-job-celeb pt-2 pb-2'>" + resultCeleb + "</div>"
