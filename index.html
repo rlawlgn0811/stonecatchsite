@@ -207,7 +207,9 @@
                 }
 			}
 			else{
-				                    case "연예인":
+				switch
+				{
+				    case "연예인":
                         resultTitle = "연예인"
                         resultExplain = "당신은 최상의 얼굴과 인싸력을 가지신 분이군요!"
                         resultCeleb = "연예인: 이동욱, 공유, 박보검"
@@ -236,7 +238,7 @@
                         resultTitle = "알수없음"
                         resultExplain = ""
                         resultCeleb = ""
-                }
+				}
 			}
                 var title = "<div class='" + prediction[0].className + "-job-title'>" + resultTitle + "</div>"
                 var explain = "<div class='job-explain pt-2'>" + resultExplain + "</div>"
